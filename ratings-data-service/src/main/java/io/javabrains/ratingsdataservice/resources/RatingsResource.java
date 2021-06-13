@@ -12,7 +12,7 @@ public class RatingsResource {
 
     @RequestMapping("/movies/{movieId}")
     public Rating getMovieRating(@PathVariable("movieId") String movieId) {
-        return new Rating(movieId, 4);
+        return new Rating(movieId, 5);
     }
 
     @RequestMapping("/user/{userId}")
